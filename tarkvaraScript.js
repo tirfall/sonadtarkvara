@@ -51,3 +51,20 @@ function kontroll() {
         document.getElementById("kontrollDiv").innerText = "vale";
     }
 }
+
+function randomSynaVene() {
+    const juhuslikSyna = Math.floor(Math.random() * synadVene.length);
+    currentSyna = synadVene[juhuslikSyna];
+    document.getElementById("random-synaVene").innerHTML = currentSyna;
+}
+
+function kontrollVene() {
+    const inputValue = document.getElementById("kontrollVene").value;
+    const index = synadVene.indexOf(currentSyna);
+
+    if (synadEst[index] === inputValue) {
+        document.getElementById("kontrollDivVene").innerText = "õigus";
+    } else {
+        document.getElementById("kontrollDivVene").innerText = "vale";
+    }
+}
