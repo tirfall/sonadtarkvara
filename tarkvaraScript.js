@@ -32,6 +32,7 @@ const synadVene = [
     'итерация',
     'исправление'
 ];
+let currentSyna = '';
 //random sõna - arv
 
 
